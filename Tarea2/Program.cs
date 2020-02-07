@@ -22,8 +22,7 @@ namespace evaluacion
                 int tareas = Convert.ToInt32(Console.ReadLine());
                 Console.Write("Número de participaciones: ");
                 int part = Convert.ToInt32(Console.ReadLine());
-                Estudiante e = new Estudiante(nombre,apellido,proyecto,tareas,part);
-                estudiantes[i] = e;
+                estudiantes[i] = new Estudiante(nombre,apellido,proyecto,tareas,part);
             }
 
             foreach(Estudiante alumno in estudiantes)
